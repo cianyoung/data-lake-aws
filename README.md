@@ -42,8 +42,8 @@ Disadvantages:
 
 ### JSON Data Structures
 
-* *log_data*: log_data contains data about what users have done (columns: event_id, artist, auth, firstName, gender, itemInSession, lastName, length, level, location, method, page, registration, sessionId, song, status, ts, userAgent, userId)
-* *song_data*: song_data contains data about songs and artists (columns: num_songs, artist_id, artist_latitude, artist_longitude, artist_location, artist_name, song_id, title, duration, year)
+* **log_data**: log_data contains data about what users have done (columns: event_id, artist, auth, firstName, gender, itemInSession, lastName, length, level, location, method, page, registration, sessionId, song, status, ts, userAgent, userId)
+* **song_data**: song_data contains data about songs and artists (columns: num_songs, artist_id, artist_latitude, artist_longitude, artist_location, artist_name, song_id, title, duration, year)
 
 
 ### Fact Table
@@ -57,8 +57,8 @@ Disadvantages:
 
 ---
 ## How To
-*Project has one script: *
-* *etl.py*: Script runs Apache Spark SQL commands.
+**Project has one script:**
+* **etl.py**: Script runs Apache Spark SQL commands.
 * Reads source data (JSON files) from S3 as Spark DataFrames
 * Spark Dataframes are use to manipulate data
 * Analytics are written back to S3 as Spark parquet files
